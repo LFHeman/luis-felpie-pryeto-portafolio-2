@@ -7,7 +7,7 @@
       font-family: 'Montserrat','Sanserif';
  }
  h2{
-      font-size: 801px;
+      font-size: 24px;
  }
  h3{
       font-family: 18px;
@@ -17,19 +17,29 @@
  #inicio{
       height: 70vh;
       widows: 100%;
-      background-image: url("../img/wallpaper.jpg");
+      background-image: url()
       background-size: cover;
  }
  /* Navegacion */
  .navegacion{
      height: 10vh; 
+     display: flex;
+     justify-content: flex-end;
+ }
+
+ .lista{
+      display: flex;
+      align-items: center;
+      width: 30%;
+      justify-content: space-around;
  }
  .navItem{
       list-style: none;
       font-weight: 600;
  }
  .navItem a{
-      color: #fff;
+      color: rgb(160, 20, 20);
+      transition: all 0.3s ease;
  }
  .navItem:hover a{
       color: #9acd32;
@@ -38,18 +48,21 @@
  /* Portada */
  #portada{
       height: 60vh;
-      color: #fff;
+      color: rgb(23, 15, 92);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
  }
  .portadaImagen{
       height: 120px;
       width: 120px;
       border-radius: 50%;
-      /* 
-      El siguiente estilo no debe ser necesariamente igual al del alumno 
-      ya que es opcional.
-      */
+    
       box-shadow: 14px 18px 30px 1px rgba(0,0,0,0.63); 
  }
+
+ 
  /* Sobre Mi */
  #sobreMi{
       height: 30vh;
@@ -59,6 +72,9 @@
       padding-top: 3%;
       text-align: center;
       color: #fff;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
  }
  #sobreMi h2{
       margin-bottom: 10px;
@@ -68,12 +84,21 @@
       padding-top: 8%;
       text-align: center;
  }
+
+ .proyectoTitulo{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
  .proyectoTitulo h2{
       color: #EC7063;
+     
  }
  .proyectoTitulo h3{
       color: #9b9b9b;
       margin: 8px 0;
+      justify-content: space-between;
  }
  /* Contacto */
  #contacto{
@@ -118,4 +143,12 @@
       color: #fff;
       text-align: center;
       padding: 5% 10%;
+      iconosFooter{
+          margin-top: 24px;
+     }
+     .iconosFooter a{
+          margin: 0 24px;
+          color:#fff;
+          font-size: 30px;
+     }
  }
